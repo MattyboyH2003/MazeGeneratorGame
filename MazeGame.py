@@ -89,8 +89,6 @@ def MazeGenerator(size, io=None):
         maze[io[3]][size-1] = "e"
     elif io[2] == 3: #W
         maze[0][io[3]] = "e"
-    
-    PrintMaze(maze, size)
 
     #Start Plotting Paths
     maze = CreatePath(maze, size, startPos)
@@ -304,7 +302,7 @@ def MazeGame(maze, size, startPos):
         pygame.display.update()
 
 if __name__ == "__main__":
-    size = 9
+    size = 69
 
     inSide = _random.randint(0,3)
     inPos = (_random.randint(0,((size-3)/2))*2)+1
